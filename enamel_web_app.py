@@ -38,7 +38,7 @@ def image_classification(image_array):
                 elif int(prediction[0]) == 7:
                     return " THIS IS GREASE MARK, SO THIS IS BAD QUALITY"
                 elif int(prediction[0]) == 8:
-                    return "THIS IS GRIT RESIDUALS, SO THISIS BAD QUALITY"
+                    return "THIS IS GRIT RESIDUALS, SO THIS IS BAD QUALITY"
                 elif int(prediction[0]) == 9:
                     return"THIS IS POOR ADHESIONTHIS, SO THIS IS BAD QUALITY"
                 elif int(prediction[0]) == 10:
@@ -54,7 +54,7 @@ def image_classification(image_array):
                 elif int(prediction[0]) == 15:
                     return "THIS IS GOOD QUALITY ENAMEL"
                 elif int(prediction[0]) == 16:
-                    return "THIS IS GOOD QUALTHIS ISY ENAMEL"
+                    return "THIS IS GOOD QUALTHIS ENAMEL"
                 else:
                     return  "KINDLY GO TO PREPROCESS"
             
