@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 # Load the dumped model
-loaded_model = pickle.load(open(r'D:\python\AI\computer vision\image classification for enamel quality checking\classifier model\classifier_enamel_ml_model.sav', 'rb'))
+loaded_model = pickle.load(open(r'classifier_enamel_ml_model.sav', 'rb'))
 
 def image_classification(image_array):
     
