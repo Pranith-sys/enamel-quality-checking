@@ -24,7 +24,7 @@ def image_classification(image_array):
             if predict_probability_int_value >= 95:   
                 prediction = loaded_model.predict(image_array.reshape(1, -1))
                 if int(prediction[0]) == 1:
-                    return "THIS IS BLITERS, SO THIS IS IS BAD QUALITY"
+                    return "THIS IS BLITERS, SO THIS IS BAD QUALITY"
                 elif int(prediction[0]) == 2:
                     return "THIS IS BURN OFF, SO THIS IS BAD QUALITY"
                 elif int(prediction[0]) == 3:
@@ -54,14 +54,14 @@ def image_classification(image_array):
                 elif int(prediction[0]) == 15:
                     return "THIS IS GOOD QUALITY ENAMEL"
                 elif int(prediction[0]) == 16:
-                    return "THIS IS GOOD QUALTHIS ENAMEL"
+                    return "THIS IS GOOD QUALITY ENAMEL"
                 else:
                     return  "KINDLY GO TO PREPROCESS"
             
             elif predict_probability_int_value >= 80 and predict_probability_int_value < 95:
-                return "I'M NOT QUITE SATISFIED WITH THIS PRODUCT , SO GO TO REWORK"
+                return "I'M NOT QUITE SATISFIED WITH THIS PRODUCT, SO GO TO REWORK"
             elif predict_probability_int_value <=50:
-                return "THIS IS NOT APPROPRIATE FOR HERE SO , THIS PRODUCT IS REJECTED!"
+                return "THIS IS NOT APPROPRIATE FOR HERE SO, THIS PRODUCT IS REJECTED!"
             else:
                 return 'MAINTENANCE BREAK, COME BACK FEW MINUTES AFTER'
     
