@@ -63,7 +63,7 @@ def image_classification(image_array):
             elif predict_probability_int_value <=50:
                 return "THIS IS NOT APPROPRIATE FOR HERE SO, THIS PRODUCT IS REJECTED!"
             else:
-                return 'MAINTENANCE BREAK, COME BACK FEW MINUTES AFTER'
+                return 'I'M NOT QUITE SATISFIED WITH THIS PRODUCT, SO GO TO REWORK'
     
 
 def preprocess_image(image):
